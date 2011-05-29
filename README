@@ -1,1 +1,3 @@
-ZillowPy is a thin Python wrapper around the <a href="http://www.zillow.com/howto/api/APIOverview.htm">Zillow API</a>
+ZillowPy is a thin Python wrapper around the Zillow API.
+
+See zillow_api_test.py for sample usage.
