@@ -38,13 +38,6 @@ class ZillowApiTest(unittest.TestCase):
     result = gz.Execute()
     self.assertEquals(result.zestimate.message.code, "0")
 
-#  def testGetSearchResutsNoExactMatchFound(self):
-#    gsr = zillow_api.GetSearchResults(self._zws_id, address="1 World Way",
-#                                      citystatezip="Los Angeles, CA")
-#    search_result = gsr.Execute()
-#    self.assertEquals(int(search_result.searchresults.message.code),
-#                      zillow_api.GetSearchResults.NO_EXACT_MATCH)
-
   def testGetSearchResultsApiExample(self):
     gsr = zillow_api.GetSearchResults(self._zws_id, address="2114 Bigelow Ave",
                                       citystatezip="Seattle, WA")
